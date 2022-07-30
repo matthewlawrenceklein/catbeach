@@ -79,3 +79,5 @@ end
 gem "devise", "~> 4.8"
 
 gem "shoulda", "~> 4.0"
+
+gem "byebug", "~> 11.1"

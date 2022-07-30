@@ -1,0 +1,20 @@
+  <table>
+  <thead>
+    <th>name</th>
+    <th>description</th>
+    <th>price</th>
+    <th>available</th>
+    <th>effects</th>
+  <thead>
+  <tbody>
+    <% @store_items.each do |item| %>
+      <tr>
+        <td><%= item[:name] %></td>
+        <td><%= item[:description] %></td>
+        <td><%= item[:price] %></td>
+        <td><%= item[:available_to_buy] %></td>
+        <td><%= item[:bonuses].join(', ') %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>

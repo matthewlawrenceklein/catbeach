@@ -1,0 +1,21 @@
+items:
+  - name: "baseball_hat"
+    description: "a loose fitting hat"
+    price: 20
+    available_to_buy: true
+    bonuses:
+      - "+5 speed"
+      - "+1 friendly"
+      - "+2 baseball"
+  - name: "big_catnip_cigar"
+    available_to_buy: true
+    description: "this is a comically large catnip cigar. too bad you forgot your matches"
+    price: 10
+    bonuses:
+      - "-1 smell"
+  - name: "giant inflatable rat"
+    available_to_buy: false
+    description: "I think this belongs to the Mouser's Local 402 Union"
+    price: 999
+    bonuses:
+      - "+5 solidarity"
