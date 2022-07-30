@@ -17,7 +17,11 @@
           <td><%= item[:price] %></td>
           <td><%= humanize_boolean(item[:available_to_buy]) %></td>
           <td><%= item[:bonuses].join(', ') %> </td>
-          <td> <button class='btn'> purchase </button> </td>
+          <% if item[:owned] %>
+            <td> <button class='btn disabled'> owned </button> </td>
+          <% else %>
+            <td> <button class='btn'> purchase </button> </td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>
