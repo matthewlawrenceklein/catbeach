@@ -1,4 +1,9 @@
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-light p-2">
   <a class="navbar-brand" href="<%= user_path(current_user) if current_user %>">Catbeach.club</a>
+  <% if current_user %>
+    <li class='nav-item'>
+      <p> bux: <%= current_user.bux  %></p>
+    </li>
+  <% end %>
   <%= button_to "logout", destroy_user_session_path, method: :delete, class: 'btn' if current_user %>
 </nav>

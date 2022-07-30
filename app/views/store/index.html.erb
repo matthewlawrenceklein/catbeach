@@ -18,9 +18,15 @@
           <td><%= humanize_boolean(item[:available_to_buy]) %></td>
           <td><%= item[:bonuses].join(', ') %> </td>
           <% if item[:owned] %>
-            <td> <button class='btn disabled'> owned </button> </td>
+            <td> <button class='btn disabled btn-primary'> owned </button> </td>
+          <% elsif item[:price] > current_user.bux %>
+            <td> <button class='btn disabled btn-danger'> too $$$ </button> </td>
           <% else %>
-            <td> <button class='btn'> purchase </button> </td>
+            <td> 
+              <div class='btn btn-success' href="/users">
+              <%= link_to 'purchase', new_item_path(item)%>
+              </div> 
+            </td>
           <% end %>
         </tr>
       <% end %>
