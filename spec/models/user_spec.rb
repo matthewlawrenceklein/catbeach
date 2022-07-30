@@ -1,6 +1,7 @@
 require "rails_helper"
 
 RSpec.describe User, :type => :model do
+  it { should have_one(:cat)}
 #   before(:each) do
 #     @user = User.new
 #     @cat = Cat.new(user: @user)
