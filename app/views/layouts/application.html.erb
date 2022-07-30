@@ -17,6 +17,10 @@
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
+    <%= render 'layouts/nav' %>
+    <% if current_user %>
+      <%= render 'layouts/tabs' %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
