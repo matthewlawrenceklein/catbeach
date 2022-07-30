@@ -19,3 +19,10 @@ items:
     price: 999
     bonuses:
       - "+5 solidarity"
+  - name: "mysterious parasol"
+    available_to_buy: true
+    description: "Sure it blocks the shade, but in a kind of haunted spooky way. oh well!"
+    price: 115
+    bonuses:
+      - "+2 intrigue"
+      - "+4 shade"
