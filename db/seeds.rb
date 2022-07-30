@@ -7,10 +7,14 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Cat.destroy_all
+Item.destroy_all
 User.destroy_all
 
 u = User.new(email: 'mtt.l.kln@gmail.com', password: 'P@ssw0rd', bux: 100)
 u.save
+
+i = Item.new(name: 'baseball hat', user: u)
+i.save
 
 c = Cat.new(name: 'Garby', user: u)
 c.save
