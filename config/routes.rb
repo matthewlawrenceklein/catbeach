@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :users
   resources :items, only: [:new]
   resources :store, only: [:index]
+  resources :cats,  only: [:show]
 
   root to: 'users#show'
 end

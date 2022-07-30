@@ -3,10 +3,13 @@
     <a class="nav-link <%= 'active' if params[:controller] == 'users' %>" href="<%= user_path(current_user)%>">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link <%= 'active' if params[:controller] == 'store' %>" href="/store">Store</a>
+    <a class="nav-link <%= 'active' if params[:controller] == 'store' %>" href="<%= store_index_path %>">Store</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Your Spot</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link <%= 'active' if params[:controller] == 'cats' %>" href="<%= cat_path(current_user.cat.id)%>">Your Cat</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Settings</a>
