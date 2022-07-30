@@ -1,5 +1,5 @@
 items:
-  - name: "baseball_hat"
+  - name: "baseball hat"
     description: "a loose fitting hat"
     price: 20
     available_to_buy: true
@@ -7,7 +7,7 @@ items:
       - "+5 speed"
       - "+1 friendly"
       - "+2 baseball"
-  - name: "big_catnip_cigar"
+  - name: "big catnip cigar"
     available_to_buy: true
     description: "this is a comically large catnip cigar. too bad you forgot your matches"
     price: 10

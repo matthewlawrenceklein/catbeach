@@ -12,7 +12,7 @@
         <td><%= item[:name] %></td>
         <td><%= item[:description] %></td>
         <td><%= item[:price] %></td>
-        <td><%= item[:available_to_buy] %></td>
+        <td><%= humanize_boolean(item[:available_to_buy]) %></td>
         <td><%= item[:bonuses].join(', ') %> </td>
       </tr>
     <% end %>
