@@ -1,4 +1,4 @@
-items:
+cat_items:
   - name: "baseball hat"
     description: "a loose fitting hat"
     price: 20
@@ -26,3 +26,28 @@ items:
     bonuses:
       - "+2 intrigue"
       - "+4 shade"
+spot_items:
+  - name: "blue spotted blanket"
+    description: "say goodbye to sandy butts"
+    price: 22
+    available_to_buy: true
+    bonuses:
+      - "-2 sandy beans"
+  - name: "folding chair"
+    description: "a moderately comfortable folding chair"
+    price: 40
+    available_to_buy: true
+    bonuses:
+      - "+1 afternoon nap"
+  - name: "plastic cooler"
+    description: "no drinks or ice, but a box is a box"
+    price: 60
+    available_to_buy: true
+    bonuses:
+      - "+4 i'm in a box"
+  - name: "bit of cellophane"
+    description: "I think this is from a Chunky bar wrapper"
+    price: 5
+    available_to_buy: true
+    bonuses:
+      - "+6 entertainment"

@@ -1,0 +1,14 @@
+<h1>Welcome to the beach store!</h1>
+<div class='d-flex flex-column'>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" href="<%= store_cat_items_path %>">Cat</a>
+    </li>
+    <li class="nav-ite\">
+      <a class="nav-link active" href="<%= store_spot_items_path %>">Spot</a>
+    </li>
+  </ul>
+  <%= render partial: 'items_table', locals: {items: @store_items, bong: 'rip'} %>
+</div>
+
+
